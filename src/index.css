@@ -1,13 +1,228 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.custBtn {
+	position:absolute;
+    bottom:0;
+    margin-bottom:15px;
+}
+ul {
+  list-style-type: none;
+  display:flex;
+  justify-content:space-around;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.basicFlex {
+	display:flex;
+    height:70px;
+}
+.basicFlex div {
+	width:50%;
+  	height:70px;
+    text-align:center;
+    cursor:pointer;
+}
+.blueBack {
+	background-color:#bcceff;
+}
+.yellowBack {
+	background-color:#f8ffbc;
+}
+.mainDashboard {
+	margin:0 auto;
+}
+.darken {
+	position:fixed;
+  	background-color: rgba(0,0,0,.7);
+  	z-index:20;
+    top:0;
+    height:100vh;
+  	width:100vw;
+}
+.loginMainDiv {
+  	padding:20px;
+	margin:0 auto;
+  	width:500px;
+  	height:300px;
+  	background-color:white;
+    border-radius:4px;
+  	z-index:21;
+    position: fixed;
+    top: calc(50vh - (/* height */150px));
+    left:  calc(50vw - (/* height */250px));
+    /* bring your own prefixes */
+}
+.addForm {
+	margin:0 auto;
+  	border:1px solid lightgrey;
+  	height:400px;
+  	width:425px;
+  	padding:15px;
+    background-color:white;
+    text-align:center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.addForm input {
+  	margin-left:5px;
+	width:300px;
+    height:20px;
+    margin-bottom:20px;
+}
+.leaderboardUserMain {
+  	display:flex;
+	height:125px;
+  	width:600px;
+  	border:1px solid darkgrey;
+  	margin:0 auto;
+  	margin-bottom:30px;
+}
+.leaderboardUserMain img {
+	height:125px;
+  	width:auto;
+}
+.imgHoldDiv {
+	width:175px;
+  	backgroundcolor:red;
+}
+.remainder {
+	width:425px;
+}
+
+.remainder div {
+	display:block;
+}
+.nav {
+
+}
+.middleImageHolder {
+	height: 100px;
+  	width:100px;
+    border-radius:50%;
+  	margin:0 auto;
+    text-align:center;
+    border:1px solid black;
+}
+.middleImageHolder img{
+	width:100px;
+  	height:100px;
+  	border-radius:50%;
+}
+.center {
+	text-align:center;
+}
+body {
+  background-color:#EEEEEE;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.flexMain {
+    padding-top: 30px;
+	margin:auto 0;
+    text-align:center;
+	justify-content:space-around;
+    display:flex;
+  	flex-direction:column;
+  	flex-flow: row wrap;
+    height:100%;
+  	width:100%;
+}
+.centerPower {
+	text-align:center;
+  	position:absolute;
+  	color:white;
+  	font-size:24px;
+  	
+}
+.flex {
+	display:flex;
+  	text-aligh:center;
+  	align-items: center;
+    justify-content: center;
+  	height:100%;
+}
+.backAgainOne {
+  	border: 4px solid #092f40;
+	background-color:#092f40;
+  	transition: font-size .59s, letter-spacing .59s;
+  	color:white;
+  	padding:10px;
+    cursor:pointer;
+}
+.backAgainOne:hover {
+	font-size:16px;
+  	letter-spacing:2px;
+  	background-color:#214353 !important;
+ 	border-color:#214353;
+}
+.backAgainTwo {
+  	border: 4px solid #363946;
+    cursor:pointer;
+	background-color:#363946;
+  	transition: font-size .59s, letter-spacing .59s;
+  	color:white;
+  	padding:10px;
+}
+.chosen {
+	border:4px solid gold !important;
+}
+.chosen:hover {
+	border:4px solid gold !important;
+}
+.backAgainTwo:hover {
+	font-size:16px;
+    letter-spacing:2px;
+  	background-color:#4a4c58 !important;
+  	border-color:#4a4c58;
+}
+.backOne {
+  border: 4px solid #092f40;
+	background-color:#092f40;
+  	transition: font-size .59s, letter-spacing .59s;
+  	color:white;
+  	padding:10px;
+    cursor:pointer;
+}
+.backOne:hover {
+  	border:4px solid #6AB9EA;
+	font-size:16px;
+  	letter-spacing:2px;
+  	background-color:#214353 !important;
+}
+.backTwo {
+  	border: 4px solid #363946;
+    cursor:pointer;
+	background-color:#363946;
+  	transition: font-size .59s, letter-spacing .59s;
+  	color:white;
+  	padding:10px;
+}
+.backTwo:hover {
+  	border:4px solid #6AB9EA;
+	font-size:16px;
+    letter-spacing:2px;
+  	background-color:#4a4c58 !important;
+}
+.flexed {
+    align-self: center;
+	width:50%;
+  	max-height:100px;
+  	height:100px;
+    text-aligh:center;
+  	text-aligh:center;
+  	align-items: center;
+    justify-content: center;
+}
+.flexItem {
+  	
+	min-width:550px;
+  	max-width:550px;
+  	height:140px;
+  	margin-bottom:20px;
+}
+.container {
+  padding:0 10x 10 10px;
+  height:100%;
+  margin:0 auto;
 }
