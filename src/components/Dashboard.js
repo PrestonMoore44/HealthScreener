@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import  Question from './Question'
+import { BsDot } from "react-icons/bs";
 
 class Dashboard extends Component {
   state = {
@@ -23,27 +24,26 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="mainDashboard">
-       	<div className="basicFlex">
-            <div className="blueBack" onClick={this.handleLatest}><h2>Latest Polls</h2></div>
-      		<div className="yellowBack" onClick={this.handleAnswered}><h2>Answered Polls</h2></div>
-		</div>
-          { this.state.showUnread ?
-             <div className="flexMain blueBack">
-              {this.props.questionsLatest.map((it) => (
-                <div className="flexItem" key={it.id}>
-                   <Question question={it}/>
-                </div>
-			  ))}
+        <div className="backMain">
+          <div className="middleMeMain">
+            <div className="middleMeFirst">
+              <div>ONLINE BRANDING</div>
+              <BsDot/>
+              <div>CUSTOM SOFTWARE SOLUTIONS</div>
+              <BsDot/>
+              <div>WEB/MOBILE APPS</div>
+              <BsDot/>
+              <div>MACHINE LEARNING</div>
             </div>
-					:
-           <div className="flexMain yellowBack">
-             {this.props.questionsAnswered.map((it) => (
-               <div className="flexItem" key={it.id}>
-                 <Question question={it}/>
-               </div>
-			))}
-           </div>
-		}
+            <div className="middleMeMainSecond">
+              Your brand has one chance to get it right.
+            </div>
+            <div className="middleMeThird">
+              Partner with Matrix Technology to create frictionless digital customer experiences.
+            </div> 
+          </div>
+        </div>
+
       </div>
     )
   }

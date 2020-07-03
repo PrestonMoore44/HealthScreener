@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { withRouter } from 'react-router'
 import Login from './Login' 
 import { handleInitialData } from '../actions/shared'
+import { FaAngleDown } from "react-icons/fa";
 
 
 class Nav extends Component {
@@ -17,33 +18,24 @@ class Nav extends Component {
     return (
       <nav className='nav'>
        { authedUser === '' ?
-       	<div>
-       		<Login></Login>
-       		<h3 className='center'>Welcome, Guest</h3>
-       </div>
+       	<div className="flexHeaderMain">
+          <div className="logoContainer">
+            <div>Matrix Technology</div>
+            <div>logo</div>
+          </div>
+          <div className="otherHeaderRight">
+            <div>Approach</div>
+            <div>Team <FaAngleDown className="rotateMe"/></div>
+            <div>Industries<FaAngleDown className="rotateMe"/></div>
+            <div>Results<FaAngleDown className="rotateMe"/></div>
+            <div>
+              <button className="speakButton">Speak With an Expert</button>
+            </div>
+          </div>
+        </div>
          :
-       		<h3 className='center'>Welcome, {userName}</h3>
+        <div className="flexHeaderMain"></div>
        }
-		<ul>
-        	<li>
-		{ !loading ?
-         	<NavLink exact to='/' onClick={this.handleClick} activeClassName='active' >
-         		Logout
-			</NavLink>	
-         :
-         <a href=''>Login</a>
-        }
-			</li>
-			<li>
-              <NavLink exact to='/' activeClassName='active'>Home</NavLink>
-			</li>
-			<li>
-				<NavLink exact to='/Leaderboard' activeClassName='active'>Leaderboard</NavLink>
-			</li>
-			<li>
-				<NavLink exact to='/Add' activeClassName='active'>Add</NavLink>
-			</li>
-		</ul>
       </nav>
     )
   }
