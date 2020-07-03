@@ -74,6 +74,98 @@ ul {
   font-size: 22px;
   width:450px;
 }
+.popContainerMain {
+  height:600px;
+  position:relative;
+  background-color: white;
+}
+.curved {
+  background-color: white;
+}
+.curved div {
+  height:100px;
+  background-color: #f3f4f5;
+}
+.curved svg {
+  display: block !important;
+}
+.centerMeNarrow {
+  padding-top:10px;
+  font-size:18px;
+  text-align:center;
+}
+.secondMid {
+  margin-bottom:10px;
+  text-align:center;
+  margin-top:100px;
+}
+.secondMidInner {
+  width:740px;
+  font-size:40px;
+  letter-spacing:2px;
+  font-weight:bold;
+  margin:auto;
+}
+.secondMidInnerTwo {
+  width:900px;
+  padding-top:10px;
+  font-size:40px;
+  letter-spacing:2px;
+  font-weight:bold;
+  margin:auto; 
+}
+.middleMePopContainer {
+  display: flex;
+  justify-content: center;
+}
+.middleIcon {
+  margin-top:25px;
+  color:white !important;
+  font-size:60px;
+  border-radius: 50%;
+  padding:30px;
+  background-color:#3c52a1;
+}
+.middleMePop {
+  height:260px;
+  margin-left:17px;
+  margin-right:17px;
+  width: 26%;
+  margin-top:-50px;
+  display: flex;
+  flex-direction:column;
+  align-self: flex-end;
+  background-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.popTop {
+  height:160px;
+  text-align:center;
+}
+.popBottom {
+  text-align: center;
+  height:60px;
+  padding-top:10px;
+  padding-right:40px;
+  padding-left:40px;
+  font-size:23px;
+  font-weight: bold;
+  transition:.2s;
+  cursor:pointer;
+}
+
+.popBottom:hover {
+  color:#3ca7b4;
+}
+.one {
+  border-bottom:9px solid #f06e35;
+}
+.three {
+  border-bottom:9px solid #3ca7b4;
+}
+.two {
+  border-bottom:9px solid #F0DF35;
+}
 .middleMeMainSecond {
   padding-top:50px;
   font-size: 64px;
