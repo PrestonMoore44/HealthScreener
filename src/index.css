@@ -86,6 +86,50 @@ ul {
   align-items: flex-start !important;
   justify-content: center;
 }
+.iconEdit {
+  display: block !important;
+  font-size:60px;
+}
+.bundas {
+  margin-left:15px;
+}
+.boldMe {
+  font-weight:bolder;
+}
+.flexMainTwo {
+  display: flex;
+  background-color:white;
+  position: relative;
+}
+.firstFlexMainTwo {
+  margin-top:120px;
+  color:  #3e3e3e;
+}
+.afterIconDiv {
+  width:100% !important;
+}
+.flexMainTwoIn {
+  width:100% !important;
+  padding-left:75px;
+  line-height: 1.5;
+  font-size:18px;
+  min-height:200px;
+  display:flex;
+  margin-bottom:10px;
+}
+.flexMainTwoIn div {
+  padding-right:5px;
+  z-index:2;
+}
+
+.flexMainTwo div {
+  width:50%;
+}
+.flexMainTwo img {
+  width:100%;
+  margin-right:20px;
+  height:100%;
+}
 .svgTwo {
   /*margin-top:px;*/
 }
@@ -120,6 +164,19 @@ ul {
   display:inline-block !important;
 }
 
+.middleMeMiddle {
+  min-width:62%;
+  max-width:900px;
+  line-height: 1.5;
+  margin: auto;
+  padding-left:20px;
+  padding-right:20px;
+  font-size:42px;
+  height:130px !important;
+  font-weight:bolder;
+  text-align:center;
+  color:#333333;
+}
 .centerRedButton {
   font-size:15px;
   top:0;
@@ -132,7 +189,7 @@ ul {
   transform: translateX(-50%);
   border: 2px solid #FF4343;
   transition:.2s;
-  margin-top:-150px;
+  margin-top:-125px;
   padding:16px;
   background-color:transparent;
   padding-left:25px;
@@ -150,6 +207,7 @@ ul {
 
 .centerRedButtonContainer {
   position:relative;
+  height:40px !important;
 }
 
 .flexMeDTwo {

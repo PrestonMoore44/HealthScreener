@@ -8,6 +8,7 @@ import { DiCode } from "react-icons/di"
 import { FaCubes, FaChevronRight } from "react-icons/fa"
 import { AiFillCloseCircle } from "react-icons/ai";
 import { IoMdCloseCircle } from "react-icons/io";
+import logo from '../images/mockUp.png'
 
 class Dashboard extends Component {
   state = {
@@ -107,12 +108,38 @@ class Dashboard extends Component {
                 </div>
               </div>
             </div>
-            <svg class="svgTwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#f3f4f5" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,165.3C384,181,480,203,576,208C672,213,768,203,864,176C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
             </svg>
             <div className="centerRedButtonContainer">
               <button className="centerRedButton">SCHEDULE A CALL<FaChevronRight className="schedIcon"/></button>
             </div>
+            <div className="middleMeMiddle">Confront the new generation of competitors in your market with confidence</div>
+          </div>
+          <div className="flexMainTwo">
+            <div className="firstFlexMainTwo">
+              <div className="flexMainTwoIn">
+                <div>
+                  <IoMdCloseCircle className="iconEdit"/>
+                  <div className="afterIconDiv">Refresh your customer-facing applications with a <span className="boldMe">modern user experience</span></div>
+                </div>
+                <div className="bundas">
+                  <IoMdCloseCircle className="iconEdit"/>
+                  <div className="afterIconDiv">Unlock <span className="boldMe">profitable revenue growth</span> with technology that scales</div>
+                </div>
+              </div>
+              <div className="flexMainTwoIn">
+                <div>
+                  <IoMdCloseCircle className="iconEdit"/>
+                  <div className="afterIconDiv">Sell with confidence while <span className="boldMe">strengthening existing customer relationships</span></div>
+                </div>
+                <div className="bundas">
+                  <IoMdCloseCircle className="iconEdit"/>
+                  <div className="afterIconDiv"><span className="boldMe">Reduce customer service errors</span> by enabling intuitive self-service</div>
+                </div>
+              </div>
+            </div>
+            <div><img src={logo}/></div>
           </div>
         </div>
 
