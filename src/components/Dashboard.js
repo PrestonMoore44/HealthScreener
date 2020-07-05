@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import  Question from './Question'
-import { BsDot } from "react-icons/bs";
+import { BsDot, BsChevronRight } from "react-icons/bs";
 import { GiChessRook, GiBrickWall, GiCubeforce } from "react-icons/gi";
 import { DiCode } from "react-icons/di"
-import { FaCubes } from "react-icons/fa"
+import { FaCubes, FaChevronRight } from "react-icons/fa"
+import { AiFillCloseCircle } from "react-icons/ai";
+import { IoMdCloseCircle } from "react-icons/io";
 
 class Dashboard extends Component {
   state = {
@@ -85,10 +87,32 @@ class Dashboard extends Component {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#f3f4f5" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,165.3C384,181,480,203,576,208C672,213,768,203,864,176C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
-            <div></div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <div className="flexMe">
+              <div className="flexMeDOne">
+                <div className="flexMeDOneMini">Time to </div>
+                <div className="flexMeDOneMini">Take the Reins</div>
+              </div>
+              <div className="flexMeDTwo">
+                <div className="flexMeDTwoMini">
+                  <div><IoMdCloseCircle className="redOrangeIcon"/></div>
+                  <div className="formatMe">Stop losing customers to newer competitors because of your outdated applications.</div>
+                </div>
+                <div className="flexMeDTwoMini">
+                  <div><IoMdCloseCircle className="redOrangeIcon"/></div>
+                  <div className="formatMe">Stop spinning your wheels with technologists that put their craft ahead of your objectives.</div>
+                </div>
+                <div className="flexMeDTwoMini">
+                  <div><IoMdCloseCircle className="redOrangeIcon"/></div>
+                  <div className="formatMe">Stop betting the farm on all-or-nothing software rewrites that risk costly failure.</div>
+                </div>
+              </div>
+            </div>
+            <svg class="svgTwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#f3f4f5" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,165.3C384,181,480,203,576,208C672,213,768,203,864,176C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
             </svg>
+            <div className="centerRedButtonContainer">
+              <button className="centerRedButton">SCHEDULE A CALL<FaChevronRight className="schedIcon"/></button>
+            </div>
           </div>
         </div>
 

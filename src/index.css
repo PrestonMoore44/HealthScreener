@@ -18,7 +18,7 @@ ul {
   transition:.25s;
   display: inline;
   -webkit-transition: -webkit-transform .25s ease-in-out;
-          transition:         transform .25s ease-in-out;
+  transition:         transform .25s ease-in-out;
 }
 
 .flexHeaderMain {
@@ -79,12 +79,100 @@ ul {
   position:relative;
   background-color: white;
 }
+.flexMe {
+  display: flex;
+  background-color: #f3f4f5 !important;
+  height:275px !important;
+  align-items: flex-start !important;
+  justify-content: center;
+}
+.svgTwo {
+  /*margin-top:px;*/
+}
+.flexMeDOne {
+  width:51%;
+  padding-top:50px;
+  font-size:50px;
+  color:#333333;
+  font-weight:bold;
+  background-color:transparent;
+}
+.formatMe {
+  width:400px;
+  font-size:17px;
+  color: #3e3e3e;
+  height:60px !important;
+  margin-bottom:5px !important;
+  border-bottom:1px solid #b4b4b4;
+}
+.flexMeDOneMini {
+  height:50px !important;
+  margin:auto;
+  display:block;
+  width:350px;
+  padding-left:25px;
+  text-align:left;
+}
+.schedIcon {
+  color:#FF4343;
+  margin-left:5px;
+  background-color:transparent;
+  display:inline-block !important;
+}
+
+.centerRedButton {
+  font-size:15px;
+  top:0;
+  display:flex !important;
+  text-align:center !important;
+  -webkit-align-items: center;
+  justify-content:center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #FF4343;
+  transition:.2s;
+  margin-top:-150px;
+  padding:16px;
+  background-color:transparent;
+  padding-left:25px;
+  padding-right:25px;
+  position:absolute;
+}
+
+.centerRedButton:hover {
+  color:white;
+  background-color:#FF4343;
+}
+.centerRedButton:hover .schedIcon{
+  color:white;
+}
+
+.centerRedButtonContainer {
+  position:relative;
+}
+
+.flexMeDTwo {
+  padding-left:50px;
+  width:49%;
+  background-color:transparent;
+}
+.flexMeDTwoMini {
+  height:70px !important;
+  margin-bottom:15px;
+  display:flex;
+}
+.redOrangeIcon {
+  color:#FF4343;
+  font-size:36px;
+  margin-right: 12px;
+}
 .curved {
   background-color: white;
 }
 .curved div {
-  height:100px;
-  background-color: #f3f4f5;
+  height:250px;
+  background-color: transparent;
 }
 .curved svg {
   display: block !important;
